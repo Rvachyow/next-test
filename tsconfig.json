@@ -1,27 +1,91 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
     "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
+    "baseUrl": "src",
+    /* Bundler mode */
     "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "noEmit": true,
     "jsx": "preserve",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "types/"
+    ],
+    "paths": {
+      "~app": [
+        "./app"
+      ],
+      "~app/*": [
+        "./app/*"
+      ],
+      "~processes": [
+        "./processes"
+      ],
+      "~processes/*": [
+        "./processes/*"
+      ],
+      "~pages": [
+        "./pages"
+      ],
+      "~pages/*": [
+        "./pages/*"
+      ],
+      "~widgets": [
+        "./widgets"
+      ],
+      "~widgets/*": [
+        "./widgets/*"
+      ],
+      "~features": [
+        "./features"
+      ],
+      "~features/*": [
+        "./features/*"
+      ],
+      "~entities": [
+        "./entities"
+      ],
+      "~entities/*": [
+        "./entities/*"
+      ],
+      "~shared": [
+        "./shared"
+      ],
+      "~shared/*": [
+        "./shared/*"
+      ]
+    },
+    "allowJs": true,
     "incremental": true,
+    "esModuleInterop": true,
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

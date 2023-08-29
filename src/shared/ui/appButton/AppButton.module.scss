@@ -1,0 +1,12 @@
+.appButton {
+  background-color: #5383e8;
+  border-radius: 4px;
+  width: 62px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:active {
+    background-color: #5c8af0;
+  }
+}
