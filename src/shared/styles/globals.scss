@@ -11,6 +11,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 :focus,
 :active {
   /*outline: none;*/
@@ -117,7 +118,7 @@ body {
 #root {
   height: 100%;
 }
-.wrapper {
+.layout {
   display: flex;
   flex-direction: column;
 }

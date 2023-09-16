@@ -1,12 +1,10 @@
-export const ParseCookie = (cookie: string, full?: boolean): string => {
-  console.log(cookie);
+export const fullVersionCountry = (short: string): string => {
   const objLanguage = {
     en: "English",
     ru: "Русский",
+    jp: "日本語",
   };
-  let arras = cookie.split(";");
-  let parse = arras[1].split("=");
-  console.log(parse[1]);
-  if (full) return objLanguage[parse[1]];
-  return parse[1];
+  //@ts-ignore
+  if (short in objLanguage) return objLanguage[short];
+  return "";
 };

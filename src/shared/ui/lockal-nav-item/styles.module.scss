@@ -1,0 +1,46 @@
+.lockal {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  font-size: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    background-color: white;
+    width: 100%;
+    opacity: 0;
+  }
+  &:hover {
+    &:after {
+      content: "";
+      position: absolute;
+      opacity: 1;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background-color: white;
+      width: 100%;
+      transition: opacity 1s ease;
+    }
+  }
+}
+.active {
+  font-weight: 700;
+  &:after {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: white;
+    width: 100%;
+    transition: opacity 1s ease;
+  }
+}

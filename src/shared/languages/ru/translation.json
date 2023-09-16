@@ -1,6 +1,11 @@
 {
   "NavBarGlobal": {
     "login": "Логин",
-    "online": "Игроки в Pubg"
+    "online": "Игроки в Батлграундс",
+    "loading": "Загрузка"
+  },
+  "NavBarLockal": {
+    "Home": "Главная",
+    "Leaderboards": "Таблица лидеров"
   }
 }

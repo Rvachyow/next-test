@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+.nickName {
+    padding-left: 10px;
+}
+.icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

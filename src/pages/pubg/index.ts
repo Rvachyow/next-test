@@ -1,0 +1,1 @@
+export { PubgLayout } from "./ui";

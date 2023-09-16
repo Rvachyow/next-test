@@ -1,0 +1,14 @@
+.currentLanguage {
+  margin-right: 15px;
+  .text {
+  }
+}
+.triangle {
+  position: absolute;
+  left: 75px;
+  top: 50%;
+  margin-top: -2px;
+  border-top: 4px solid #c3cbd1;
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-right: 4px solid rgba(0, 0, 0, 0);
+}

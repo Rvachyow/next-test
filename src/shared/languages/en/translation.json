@@ -1,6 +1,11 @@
 {
   "NavBarGlobal": {
     "login": "login",
-    "online": "Online"
+    "online": "Current PUBG Players",
+    "loading": "Loading"
+  },
+  "NavBarLockal": {
+    "Home": "Home",
+    "Leaderboards": "Leaderboards"
   }
 }
